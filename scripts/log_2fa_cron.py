@@ -3,7 +3,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-sys.path.append(str(Path(_file_).resolve().parent.parent))
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from app.totp_utils import generate_totp_code  
 
@@ -32,5 +32,5 @@ def main():
     print(f"{timestamp} - 2FA Code: {code}")
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()

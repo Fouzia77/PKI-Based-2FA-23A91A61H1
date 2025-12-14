@@ -1,0 +1,22 @@
+# Secrets
+encrypted_seed.txt
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
